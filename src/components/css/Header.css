@@ -1,0 +1,114 @@
+/* Reset basic styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.savoy-header {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 15px 30px;
+  font-family: 'Inter', sans-serif; /* Ya koi bhi clean font */
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative; /* Logo ko center karne ke liye zaruri hai */
+}
+
+/* Left Section */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #000;
+}
+
+/* Logo Styling */
+.header-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 6px; /* Space between letters */
+  margin: 0;
+  color: #000;
+}
+.header-center a{
+  text-decoration: none;
+}
+
+/* Right Section */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.sign-in {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: #333;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+.icon-btn:hover {
+  color: #888;
+}
+
+/* Cart Badge */
+.cart-btn {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  color: #e6a458; /* Orange-gold color like the image */
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .nav-links, .sign-in {
+    display: none; /* Mobile par links hide kar dein */
+  }
+}

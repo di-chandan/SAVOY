@@ -1,0 +1,77 @@
+.savoy-footer {
+  background-color: #222222; /* Dark background as seen in image */
+  color: #999999; /* Muted text color */
+  padding: 60px 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Links Styling */
+.footer-links {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #bbbbbb;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+/* Copyright Text */
+.footer-copyright {
+  font-size: 13px;
+  color: #777777;
+  letter-spacing: 0.3px;
+}
+
+/* Social Icons Styling */
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: #ffffff;
+  transition: opacity 0.3s ease;
+}
+
+.social-icons a:hover {
+  opacity: 0.7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+}

@@ -1,0 +1,155 @@
+.product-detail-container {
+  max-width: 1300px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Nav & Breadcrumbs */
+.product-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  font-size: 13px;
+  color: #bbb;
+}
+
+.breadcrumbs span { color: #333; }
+
+.nav-arrows {
+  display: flex;
+  gap: 15px;
+  color: #333;
+}
+
+/* Main Layout */
+.product-main-content {
+  display: flex;
+  gap: 50px;
+}
+
+/* Gallery Thumbnails */
+.product-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.thumbnail {
+  width: 70px;
+  height: 90px;
+  background: #f6f6f6;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.thumbnail.active { border: 1px solid #ddd; }
+.thumbnail img { width: 70%; object-fit: contain; }
+
+/* Center Image */
+.product-image-main {
+  flex: 1.5;
+  background: #f6f6f6;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 600px;
+}
+
+.product-image-main img { max-width: 56%; }
+
+.zoom-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  color: #bbb;
+}
+
+/* Info Side */
+.product-info-side {
+  flex: 1;
+}
+
+.product-name {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.reviews-count { font-size: 12px; color: #999; }
+
+.product-price-large {
+  font-size: 24px;
+  color: #e6a458; /* Savoy Gold */
+  margin-bottom: 30px;
+}
+
+.product-description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* Actions */
+.purchase-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f6f6f6;
+  width: 100px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.quantity-selector button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 10px;
+  font-size: 18px;
+}
+
+.add-to-cart-btn {
+  background: #222;
+  color: white;
+  border: none;
+  padding: 18px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 100%;
+}
+
+.product-meta-actions {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+  color: #888;
+}
+
+.meta-btn, .share-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 13px;
+}
