@@ -10,7 +10,7 @@ export default function MainLayout() {
       <Header />
       
       <main className="content" id="content">
-        <Outlet />   {/* ← yahan se page content aa jayega */}
+        <Outlet />   
       </main>
       
       <Footer />
