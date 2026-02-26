@@ -49,7 +49,7 @@
 /* Center Image */
 .product-image-main {
   flex: 1.5;
-  background: #f6f6f6;
+  background: #f6f6f6; 
   position: relative;
   display: flex;
   align-items: center;

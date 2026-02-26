@@ -13,7 +13,7 @@ const Header = () => {
           <button className="icon-btn menu-btn">
             <Menu size={20} strokeWidth={1.5} />
           </button>
-          <nav className="nav-links">
+          <nav className="nav-links"> 
             <a href="/">Shop</a>
             <a href="/">Categories</a>
             <Link to="/cart">Cart</Link>
