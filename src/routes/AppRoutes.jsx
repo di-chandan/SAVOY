@@ -15,6 +15,7 @@ export default function AppRoutes() {
         {/* <Route path="/categories" element={<Category />} /> */}
         <Route path="/cart" element={<Cart />} />
         <Route path="/product/:id" element={<ProductDetail />} />
+        
         {/* aur jo bhi pages hain sab yahan daal */}
       </Route>
     </Routes>

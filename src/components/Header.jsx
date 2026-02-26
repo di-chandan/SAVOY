@@ -1,9 +1,11 @@
-import React from 'react';
+import { useCart } from '../CartContext.jsx';
 import { Menu, Search, Heart, ShoppingCart } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import './css/Header.css';
 
 const Header = () => {
+  const { cartCount, addToCart } = useCart();
+//   console.log('Cart Count in Header:', cartCount); // Debugging ke liye
   return (
     <header className="savoy-header">
       <div className="header-container">
@@ -40,7 +42,7 @@ const Header = () => {
 
           <button className="icon-btn cart-btn">
             <ShoppingCart size={20} strokeWidth={1.5} />
-            <span className="cart-count">0</span>
+            <span className="cart-count">{cartCount}</span>
           </button>
         </div>
 
