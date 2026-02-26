@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Star, ChevronLeft, ChevronRight, Heart, Facebook, Twitter, Printer } from 'lucide-react';
 import './css/ProductDetail.css';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
+import  { useCart }  from '../CartContext.jsx';
 
 const ProductDetail = () => {
+  const { addToCart } = useCart();
   const [quantity, setQuantity] = useState(1);
   const { id } = useParams();
   const [product, setProduct] = useState(null);
@@ -100,11 +102,11 @@ const ProductDetail = () => {
                 <span>{quantity}</span>
                 <button onClick={() => setQuantity(quantity + 1)}>›</button>
               </div>
-              <button className="add-to-cart-btn">Add to cart</button>
+              <button className="add-to-cart-btn" onClick={() => addToCart(id)}>Add to cart</button>
             </div>
 
             <div className="product-meta-actions">
-              <button className="meta-btn"><Heart size={16} /> Wishlist</button>
+              
               <div className="share-icons">
                 <Facebook size={16} />
                 <Twitter size={16} />
@@ -122,7 +124,7 @@ const ProductDetail = () => {
             {relatedProducts.map((item) => (
               <div key={item.id} className="related-card">
                 <div className="related-image-wrapper">
-                  <img src={item.image} alt={item.title} />
+                  <Link to={`/product/${item.id}`}><img src={item.image} alt={item.title} className="related-image" /></Link>
                 </div>
                 <div className="related-info">
                   <div className="related-header">
