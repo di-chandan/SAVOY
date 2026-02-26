@@ -153,3 +153,98 @@
   gap: 15px;
   font-size: 13px;
 }
+/* Container for the whole section */
+.related-products-section {
+  margin-top: 80px;
+  padding-top: 40px;
+  border-top: 1px solid #eee;
+}
+
+.related-title {
+  font-size: 24px;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Grid Layout */
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Individual Card */
+.related-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.related-image-wrapper {
+  background-color: #f5f5f5; /* Light grey background like in image */
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 12px;
+  position: relative;
+  max-height: 300px;
+  border-radius: 15px;
+}
+
+.related-image-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.related-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.related-name {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+.wishlist-icon-small {
+  color: #999;
+  cursor: pointer;
+}
+
+.related-price {
+  font-weight: 500;
+  color: #333;
+  font-size: 15px;
+}
+
+/* Color variant dots */
+.color-dots {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .related-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .related-grid {
+    grid-template-columns: 1fr;
+  }
+}
